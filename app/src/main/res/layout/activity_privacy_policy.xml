@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrivacyPolicy">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarPrivacyPolicy"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimaryDark"
+        app:layout_constraintTop_toTopOf="parent"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"></android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/privacyPolicyCardView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:isScrollContainer="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarPrivacyPolicy">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/linearLayoutPrivacyPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/privacyPolicy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/privacyPolicy"
+                    android:layout_margin="8dp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/privacyPolicy1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/privacyPolicy1"
+                    android:layout_margin="8dp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/privacyPolicy2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/privacyPolicy2"
+                    android:layout_margin="8dp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/privacyPolicy3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/privacyPOlicy3"
+                    android:layout_margin="8dp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/privacyPolicy4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/privacyPolicy4"
+                    android:layout_margin="8dp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/privacyPolicy5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/privacyPolicy5"
+                    android:layout_margin="8dp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/privacyPolicy6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/privacyPolicy6"
+                    android:layout_margin="8dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
